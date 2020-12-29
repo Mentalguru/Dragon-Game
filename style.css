@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: blue;
+    overflow: hidden;
+}
+
+
+.gamecontainer{
+    background-image: url("background.png") ;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100%;
+}
+.dino{
+    background-image: url("dino2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    width: 240px;
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    
+}
+.dragon{
+    background-image: url("dragon4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 144px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+.gameover{
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    visibility: hidden;
+    
+}
+.animatedino{
+    animation: dino 0.6s linear;
+}
+@keyframes dino{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.dragonAni{
+    animation:dragon 3s linear infinite ;
+}
+@keyframes dragon{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+    
+    
+
+
